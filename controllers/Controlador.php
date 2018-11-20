@@ -10,7 +10,14 @@ class MVCControlador{
 
     
     public function EnlacesPaginasControl(){
-        $enlacecontrol = $_GET["action"];
+        if(isset($_GET ["action"]))
+        {
+            $enlacecontrol = $_GET ["action"];
+        }
+        else{
+            $enlacecontrol = "inicio";
+
+        }
         $Respuesta = EnlacesPaginas::EnlacesPaginasModel( $enlacecontrol);
         include $Respuesta;
     }

@@ -19,6 +19,6 @@
         $MVC = new MVCControlador();
         $MVC -> EnlacesPaginasControl();       
     ?>
-    </section>s
+    </section>
 </body>
 </html>
